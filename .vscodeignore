@@ -1,0 +1,10 @@
+# Игнорировать ненужные файлы в пакете расширения
+.vscode/
+.vscode-test/
+node_modules/
+test/
+*.test.js
+*.test.mjs
+*.log
+*.swp
+*.swo

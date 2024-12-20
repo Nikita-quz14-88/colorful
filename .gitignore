@@ -1,0 +1,13 @@
+# Зависимости Node.js
+node_modules/
+
+# Настройки и расширения VS Code
+.vscode/
+.vscode-test/
+
+# Логи
+*.log
+
+# Временные файлы
+*.swp
+*.swo

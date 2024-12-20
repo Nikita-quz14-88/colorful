@@ -1,0 +1,51 @@
+{
+  "name": "colorful-brackets",
+  "displayName": "Colorful Brackets",
+  "description": "Расширение, которое раскрашивает совпадающие скобки в разные цвета.",
+  "version": "1.0.0",
+  "publisher": "YourPublisherName",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "scripts": {
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@vscode/test-electron": "^2.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-node": "^11.1.0",
+    "@types/vscode": "^1.60.0"
+  },
+  "contributes": {
+    "commands": [],
+    "keybindings": [],
+    "languages": [
+      {
+        "id": "javascript",
+        "aliases": ["JavaScript", "javascript"],
+        "extensions": [".js"],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "typescript",
+        "aliases": ["TypeScript", "typescript"],
+        "extensions": [".ts"],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "json",
+        "aliases": ["JSON", "json"],
+        "extensions": [".json"],
+        "configuration": "./language-configuration.json"
+      }
+    ]
+  }
+}
